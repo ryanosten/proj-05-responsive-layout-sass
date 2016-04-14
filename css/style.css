@@ -1,0 +1,399 @@
+/** GENERAL STYLES **/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	xmin-height: calc(100vh - 324.9px);
+}
+
+p, 
+span{
+	line-height: 1.5;
+	max-width: 85%;
+	margin: auto;
+	font-size: 1.2em;
+	color: #787878;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** MAIN-HEADER **/
+
+.main-header {
+	display: block;
+	text-align: center;
+	background-color: #f9f9f9;
+	color: #3e3e3e;
+	padding-bottom: 30px;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+	color: #4b4b4b;
+}
+
+.main-header h1 {
+	padding: 35px 0 15px 0;
+	margin: 0;
+	font-weight: 700;
+	color: #4b4b4b;
+}
+
+.nav-links li a {
+	color: #3e3e3e;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+	margin: 5px auto;
+	background-color: white;
+	max-width: 90%;
+	font-weight: 900;
+}
+
+.nav-links li a:hover {
+	background-color: #574bed;
+	color: white;
+}
+
+.nav-links li a.selected {
+	background-color: #574bed;
+	color: white;
+}
+
+
+/** DAVE QUESTION - TRIED TO ADD BCKGRND IMAGE W/ CSS RATHER THAN IN HTML, BUT WASN'T ABLE TO GET TO DISPLAY, WHY? 
+.profile-pic {
+	background-image: url(images/responsive-layout-profile.png);
+}
+**/
+
+/** tried to use container for profile img with div, why not work?
+
+.profile-container {
+	width: 60%;	
+}
+
+When should I use relative max-width vs relative width?
+
+How can I reduce the amount of lines of code?
+
+Discuss how best to handle whitespace on contact page.
+**/
+
+.profile-pic {
+	max-width: 70%;
+	display: block;
+	margin: 50px auto 30px; 
+}
+
+.profile-container {
+	max-width: 90%;
+	margin: auto;
+}
+
+/** MAIN CONTAINER **/
+
+.main-container {
+	display: block;
+	text-align: center;
+	max-width: 95%;
+	margin: auto;
+}
+
+.main-container h2 {
+	margin: 50px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #4b4b4b;
+}
+
+/** Question - tried to thought that pic would size to main-container class, but apparently had to set a max-width, do images not get sized by container? **/
+
+.portfolio-pic {
+	max-width: 95%;
+}
+
+.project {
+	margin-bottom: 40px;
+}
+
+.project h3 {
+	margin-top: 40px;
+	font-size: 1.4em;
+	font-weight: 500;
+	color: #4b4b4b;
+}
+
+/** question - when use span vs para? **/
+
+/** FOOTER **/
+
+footer {
+	display: block;
+	margin: 0 auto; 
+	text-align: center;
+	background-color: #f9f9f9;
+	padding-bottom: 15px;
+}
+
+.footer-headline {
+	padding: 50px 0 15px;
+	color: #4b4b4b;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+footer p {
+	max-width: 85%;
+	margin: 0 auto 35px;
+}
+
+.footer-phone p,
+.footer-email p {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.footer-phone {
+	height: 35px;
+}
+
+.footer-email {
+	border-bottom: 1px solid #e7e7e7; 
+	max-width: 85%;
+	margin: 0 auto 10px;
+}
+
+.student-name {
+	display: inline-block;
+	width: 42.5%;
+	text-align: left;
+
+}
+
+.back-to-top {
+	display: inline-block;
+	width: 42.5%;
+	text-align: right;
+}
+
+.footer-phone a,
+.footer-email a {
+	color: #787878;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+.student-name {
+	color: #4b4b4b;
+	font-size: 1.2em;
+}
+
+.back-to-top {
+	color: #4b4b4b;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.nav-bar-footer {
+	display: none;
+}
+
+/** FORM **/
+
+form {
+	margin-top: 25px;
+}
+
+.form-name {
+	margin-bottom: 10px;
+}
+
+.form-email {
+	margin-bottom: 10px;
+}
+
+.form-name label,
+.form-email label {
+	margin-right: 30px;
+	font-size: 1.2em;
+	color: #787878;
+}
+
+.form-name input {
+	margin-left: -5px;
+}
+
+.form-msg label {
+	vertical-align: top;
+	font-size: 1.2em;
+	color: #787878;
+}
+
+input {
+	height: 25px;
+}
+
+input,
+textarea {
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #676767;
+	width: 200px;
+}
+
+.button {
+	margin-top: 10px;
+	width: 175px;
+	margin-left: 88px;
+	background-color: #574bed;
+	color: white;
+	border-color: transparent;
+}
+
+/** MEDIA QUERIES **/
+
+@media (min-width: 768px) {
+  
+  /** HEADER **/
+
+  .main-header-portfolio {
+  	position: fixed;
+  	box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  	width: 100%;
+  	top: 0;
+  }
+  
+  .nav-links li {
+  	display: inline-block;
+  }
+
+  .nav-links li a {
+  	background-color: transparent;
+  	padding-left: 25px;
+  	padding-right: 25px;
+  	text-align: center;
+  }
+
+  .nav-links li a:hover {
+		border-bottom: 3px solid #574bed;
+		margin-bottom: -3px;
+		background-color: transparent;
+		color: #3e3e3e;
+
+	}
+
+	.nav-links li a.selected {
+		border-bottom: 3px solid #574bed;
+		margin-bottom: -3px;
+		background-color: transparent;
+		color: #3e3e3e;
+	}
+
+
+	.profile-desc {
+  	font-size: 1.1em;
+  	font-weight: 300;
+  	max-width: 60%; 
+  	padding-top: 40px;
+  	text-align: left;
+  	float: left;
+  	 
+  }
+
+	.profile-pic {
+		float: right;
+		max-width: 38%;
+  }
+
+ 	/** COLUMN LAYOUT **/
+
+  .main-container-portfolio{
+  	margin-top: 175px;
+  }
+
+	.project {
+		display: inline-block;
+		width: 50%; 
+		margin-right: -4px;
+		vertical-align: top; /** this was tough, had to use Guil video, but got it! let's go over it. Also is it better to use inlin-block or float here. When I used float, I couldn't center right element in its container **/	
+		padding-bottom: 25px;
+	}
+
+	/** FOOTER **/
+
+  .back-to-top {
+  	display: none;
+  }
+
+  .nav-bar-footer {
+  	display: inline-block;
+  	width: 65%;
+  	text-align: right;
+  }
+
+  .student-name {
+  	width: 20%;
+  }
+
+  /** CONTACT FORM **/
+
+
+	.form-name label,
+	.form-email label {
+		margin-right: 35px;
+	}
+
+	.form-name input {
+		margin-left: -5px;
+	}
+
+
+	input,
+	textarea {
+		width: 250px;
+	}
+
+	.button {
+		margin-top: 10px;
+		width: 225px;
+		height: 40px;
+		margin-left: 110px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.main-header h1 {
+		display: inline-block;
+	}
+
+	.nav-bar {
+		display: inline-block; 
+		width: 75%;
+		text-align: right;
+	}
+
+	.profile-pic {
+		width: 38%;
+		max-width: 450px;
+	}
+
+	.project {
+		width: 33%;
+	}
+
+}
+
+
+
+

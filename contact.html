@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <!-- font include -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- css stylesheet -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  
+    <div class="wrapper">
+      <!-- header -->
+      <div class="main-header">
+        <h1><a href="index.html">Ryan Osten</a></h1>
+        <nav class="nav-bar"> 
+          <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="contact.html" class="selected">contact</a></li>
+          </ul>
+        </nav>
+          <!-- profile -->
+        <div class="profile-container clearfix"> 
+          <img class="profile-pic" src="images/responsive-layout-profile.png" alt="ryan osten profile picture">
+          <div class="profile-desc">
+            <span>I love meeting awesome people. So you can send me a virtual message through the magic internet using this web form:</span>
+            <form action="//formspree.io/ostenrj@gmail.com" method="POST">
+              <div class="form-name">
+                <label for="name">Name:</label>          
+                <input id="name" type="text" name="name" placeholder="Your name">
+              </div>      
+              <div class="form-email">
+                <label for="_replyto">Email:</label>
+                <input id="_replyto" type="email" name="_replyto" placeholder="Your e-mail">
+              </div>
+              <div class="form-msg">
+                <label for="message">Whats up:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+              </div>
+              <div class="buttonHolder">
+                <input type="submit" class="button" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <footer>
+      <h2 class="footer-headline">Contact</h2>
+      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <div class="footer-phone">
+        <p>Phone</p><a href="tel:+1(111)555-1234">+1(111)555-1234</a>      
+      </div>
+      <div class="footer-email">
+        <p>Email</p><a href="mailto:ryan@ryanosten.com">ryan@ryanosten.com</a>
+      </div>
+      <div>
+        <h4 class="student-name"><a href="index.html">Ryan Osten</a></h4>
+        <h2 class="back-to-top"><a href="#">Back To Top</a></h2>
+        <nav class="nav-bar-footer"> 
+          <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+      </nav>
+      </div>
+    </footer>
+  </body>
+</html>
