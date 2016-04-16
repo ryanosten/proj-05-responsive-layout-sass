@@ -1,18 +1,50 @@
 /** FOOTER **/
 
 footer {
+	@extend %centered;
 	display: block;
 	margin: 0 auto; 
-	text-align: center;
 	background-color: #f9f9f9;
 	padding-bottom: 15px;
 }
 
-.footer-headline {
+.footer {
+	
+	&-headline {
+	color: $color-text-dark;
 	padding: 50px 0 15px;
-	color: #4b4b4b;
 	text-transform: uppercase;
 	font-size: 1.2em;
+	
+	}
+
+	&-phone p,
+	&-email p {
+	display: inline-block;
+	padding-right: 15px;
+	
+	}
+
+	&-phone {
+	height: 35px;
+	}
+
+	&-email {
+	border-bottom: 1px solid #e7e7e7; 
+	max-width: 85%;
+	margin: 0 auto 10px;
+	}
+
+	&-phone a,
+	&-email a {
+	color: $color-text-light;
+	font-size: 1.3em;
+	font-weight: 700;
+	}
+
+	&-contact {
+		padding-top: 35%
+	}
 }
 
 footer p {
@@ -20,21 +52,6 @@ footer p {
 	margin: 0 auto 35px;
 }
 
-.footer-phone p,
-.footer-email p {
-	display: inline-block;
-	padding-right: 15px;
-}
-
-.footer-phone {
-	height: 35px;
-}
-
-.footer-email {
-	border-bottom: 1px solid #e7e7e7; 
-	max-width: 85%;
-	margin: 0 auto 10px;
-}
 
 .student-name {
 	display: inline-block;
@@ -49,24 +66,33 @@ footer p {
 	text-align: right;
 }
 
-.footer-phone a,
-.footer-email a {
-	color: #787878;
-	font-size: 1.3em;
-	font-weight: 700;
-}
-
 .student-name {
-	color: #4b4b4b;
+	color: $color-text-dark;
 	font-size: 1.2em;
+
+	@include tablet {
+		width: 20%;
+	}
 }
 
 .back-to-top {
-	color: #4b4b4b;
+	color: $color-text-dark;
 	font-size: 1.1em;
 	text-transform: uppercase;
+
+	@include tablet {
+		display: none;
+	}
 }
 
 .nav-bar-footer {
 	display: none;
+
+	@include tablet {
+		display: inline-block;
+	  	width: 65%;
+	  	text-align: right;
+	}
 }
+
+

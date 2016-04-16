@@ -1,29 +1,103 @@
 /** MAIN-HEADER **/
 
 .main-header {
+	@extend %centered;
 	display: block;
-	text-align: center;
 	background-color: #f9f9f9;
-	color: #3e3e3e;
+	color: $color-text-dark;
 	padding-bottom: 30px;
+
+	h1 {
+		color: $color-text-dark;
+		padding: 35px 0 15px 0;
+		margin: 0;
+		font-weight: 700;
+
+		@include desktop {
+			display: inline-block;
+		}
+	}
+}
+
+.nav-bar {
+	@include desktop {
+		display: inline-block; 
+		width: 75%;
+		text-align: right;
+	}
 }
 
 .nav-links {
+	color: $color-text-dark;
 	list-style: none;
 	padding: 0;
-	color: #4b4b4b;
+
+	@include tablet {
+		li {
+	  		display: inline-block;
+
+	  		a {
+			  	background-color: transparent;
+			  	padding-left: 25px;
+			  	padding-right: 25px;
+			  	text-align: center;
+	  		}
+
+	  		a:hover {
+				border-bottom: 3px solid #574bed;
+				margin-bottom: -3px;
+				background-color: transparent;
+				color: #3e3e3e;
+
+			}
+
+			a.selected {
+				border-bottom: 3px solid #574bed;
+				margin-bottom: -3px;
+				background-color: transparent;
+				color: #3e3e3e;
+			}
+	  	}
+	}
 }
 
-.main-header h1 {
-	padding: 35px 0 15px 0;
-	margin: 0;
-	font-weight: 700;
-	color: #4b4b4b;
+.profile {
+	
+	&-pic {
+		max-width: 70%;
+		display: block;
+		margin: 50px auto 30px;
+
+		@include tablet {
+			float: right;
+			max-width: 38%;
+		}
+
+		@include desktop {
+			width: 38%;
+			max-width: 450px;
+		}	
+	}
+
+	&-desc {
+		@include tablet {
+		  	font-size: 1.1em;
+		  	font-weight: 300;
+		  	max-width: 60%; 
+		  	padding-top: 40px;
+		  	text-align: left;
+		  	float: left;
+
+		}
+	} 
 }
 
-.profile-pic {
-	max-width: 70%;
-	display: block;
-	margin: 50px auto 30px; 
-}
+
+
+
+
+
+
+
+
 

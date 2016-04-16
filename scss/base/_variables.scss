@@ -1,0 +1,25 @@
+//Descriptive color variables
+
+$tundora-black: #4b4b4b;
+$boulder-grey: #787878;
+$royal-purple: #574bed;
+
+//Functional color variables
+
+$color-text-light: $boulder-grey;
+$color-text-dark: $tundora-black;
+$color-active: $royal-purple;
+$color-button: darken($royal-purple, 20%);
+
+//Font-stack
+
+$font-family-roboto: 'Roboto', sans-serif;
+$font-size-main: 1.2em;
+
+//Form bottom margin
+
+$form-bottom-margin: 10px;
+
+
+
+

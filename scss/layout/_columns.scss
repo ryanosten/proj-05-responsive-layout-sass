@@ -4,11 +4,25 @@
 
 .project {
 	margin-bottom: 40px;
+
+	@include tablet {
+		display: inline-block;
+		width: 50%; 
+		margin-right: -4px;
+		vertical-align: top; 	
+		padding-bottom: 25px;
+	}
+
+	@include desktop {
+		width: 33%;
+	}
 }
 
 .project h3 {
-	margin-top: 40px;
+	@include margin-top(40px);
+	color: $color-text-dark;
 	font-size: 1.4em;
 	font-weight: 500;
-	color: #4b4b4b;
 }
+
+

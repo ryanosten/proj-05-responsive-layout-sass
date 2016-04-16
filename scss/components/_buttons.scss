@@ -1,6 +1,10 @@
 .button {
-	margin-top: 10px;
+	@include margin-top(10px);
+	background-color: $color-button;
 	width: 225px;
 	height: 40px;
 	margin-left: 110px;
+	color: white;
+	border-color: transparent;
 }
+
