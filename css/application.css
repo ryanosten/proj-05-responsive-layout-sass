@@ -1,0 +1,209 @@
+/** BASE STYLES **/
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.wrapper {
+  xmin-height: calc(100vh - 324.9px); }
+
+p,
+span {
+  line-height: 1.5;
+  max-width: 85%;
+  margin: auto;
+  font-size: 1.2em;
+  color: #787878; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+a:focus {
+  color: #3e3e3e; }
+
+li a {
+  color: #3e3e3e;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: white;
+  max-width: 90%;
+  font-weight: 900; }
+
+li a:hover {
+  background-color: #574bed;
+  color: white; }
+
+li a.selected {
+  background-color: #574bed;
+  color: white; }
+
+.portfolio-pic {
+  max-width: 95%; }
+
+.project {
+  margin-bottom: 40px; }
+
+.project h3 {
+  margin-top: 40px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #4b4b4b; }
+
+/** MAIN CONTAINER **/
+.main-container {
+  display: block;
+  text-align: center;
+  max-width: 95%;
+  margin: auto; }
+
+.main-container h2 {
+  margin: 50px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #4b4b4b; }
+
+.profile-container {
+  max-width: 90%;
+  margin: auto; }
+
+.profile-container {
+  width: 60%; }
+
+/** FOOTER **/
+footer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding-bottom: 15px; }
+
+.footer-headline {
+  padding: 50px 0 15px;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+footer p {
+  max-width: 85%;
+  margin: 0 auto 35px; }
+
+.footer-phone p,
+.footer-email p {
+  display: inline-block;
+  padding-right: 15px; }
+
+.footer-phone {
+  height: 35px; }
+
+.footer-email {
+  border-bottom: 1px solid #e7e7e7;
+  max-width: 85%;
+  margin: 0 auto 10px; }
+
+.student-name {
+  display: inline-block;
+  width: 42.5%;
+  text-align: left; }
+
+.back-to-top {
+  display: inline-block;
+  width: 42.5%;
+  text-align: right; }
+
+.footer-phone a,
+.footer-email a {
+  color: #787878;
+  font-size: 1.3em;
+  font-weight: 700; }
+
+.student-name {
+  color: #4b4b4b;
+  font-size: 1.2em; }
+
+.back-to-top {
+  color: #4b4b4b;
+  font-size: 1.1em;
+  text-transform: uppercase; }
+
+.nav-bar-footer {
+  display: none; }
+
+/** FORM **/
+form {
+  margin-top: 25px; }
+
+.form-name {
+  margin-bottom: 10px; }
+
+.form-email {
+  margin-bottom: 10px; }
+
+.form-name label,
+.form-email label {
+  margin-right: 30px;
+  font-size: 1.2em;
+  color: #787878; }
+
+.form-name input {
+  margin-left: -5px; }
+
+.form-msg label {
+  vertical-align: top;
+  font-size: 1.2em;
+  color: #787878; }
+
+input {
+  height: 25px; }
+
+input,
+textarea {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #676767;
+  width: 200px; }
+
+.button {
+  margin-top: 10px;
+  width: 175px;
+  margin-left: 88px;
+  background-color: #574bed;
+  color: white;
+  border-color: transparent; }
+
+/** MAIN-HEADER **/
+.main-header {
+  display: block;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #3e3e3e;
+  padding-bottom: 30px; }
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  color: #4b4b4b; }
+
+.main-header h1 {
+  padding: 35px 0 15px 0;
+  margin: 0;
+  font-weight: 700;
+  color: #4b4b4b; }
+
+.profile-pic {
+  max-width: 70%;
+  display: block;
+  margin: 50px auto 30px; }
+
+.button {
+  margin-top: 10px;
+  width: 225px;
+  height: 40px;
+  margin-left: 110px; }
+
+/*# sourceMappingURL=application.css.map */

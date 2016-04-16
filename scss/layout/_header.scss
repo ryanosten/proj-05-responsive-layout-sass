@@ -1,0 +1,29 @@
+/** MAIN-HEADER **/
+
+.main-header {
+	display: block;
+	text-align: center;
+	background-color: #f9f9f9;
+	color: #3e3e3e;
+	padding-bottom: 30px;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+	color: #4b4b4b;
+}
+
+.main-header h1 {
+	padding: 35px 0 15px 0;
+	margin: 0;
+	font-weight: 700;
+	color: #4b4b4b;
+}
+
+.profile-pic {
+	max-width: 70%;
+	display: block;
+	margin: 50px auto 30px; 
+}
+

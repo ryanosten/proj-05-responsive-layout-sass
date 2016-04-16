@@ -1,0 +1,53 @@
+/** BASE STYLES **/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	xmin-height: calc(100vh - 324.9px);
+}
+
+p, 
+span{
+	line-height: 1.5;
+	max-width: 85%;
+	margin: auto;
+	font-size: 1.2em;
+	color: #787878;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+	color: #3e3e3e;
+}
+
+li a {
+	color: #3e3e3e;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+	margin: 5px auto;
+	background-color: white;
+	max-width: 90%;
+	font-weight: 900;
+}
+
+li a:hover {
+	background-color: #574bed;
+	color: white;
+}
+
+li a.selected {
+	background-color: #574bed;
+	color: white;
+}
