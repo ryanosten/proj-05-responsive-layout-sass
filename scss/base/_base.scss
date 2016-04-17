@@ -21,6 +21,7 @@ span {
 a {
 
 	text-decoration: none;
+	cursor: pointer;
 	
 	&:focus {
 		color: $color-text-dark;
@@ -52,4 +53,7 @@ li {
 	}
 }
 
+.hidden {
+	display: none;
+}
 

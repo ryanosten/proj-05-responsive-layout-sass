@@ -8,7 +8,8 @@ body {
   clear: both; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   a:focus {
     color: #4b4b4b; }
   a:hover {
@@ -26,6 +27,9 @@ li a {
 li a:hover, li a.selected {
   background-color: #574bed;
   color: white; }
+
+.hidden {
+  display: none; }
 
 p, span {
   line-height: 1.5;
@@ -248,5 +252,15 @@ input, textarea {
   margin-left: 110px;
   color: white;
   border-color: transparent; }
+
+.nav-button {
+  width: 60px; }
+  .nav-button a {
+    position: absolute;
+    left: 30px;
+    top: 35px; }
+  @media (min-width: 768px) {
+    .nav-button {
+      display: none; } }
 
 /*# sourceMappingURL=application.css.map */

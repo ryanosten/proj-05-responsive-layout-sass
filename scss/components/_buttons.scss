@@ -8,3 +8,17 @@
 	border-color: transparent;
 }
 
+.nav-button {
+	width: 60px;
+
+	a {
+		position: absolute;
+		left: 30px;
+		top: 35px;
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
+
