@@ -1,5 +1,5 @@
 var $nav_button = $('<div class="nav-button"><a><img src=images/nav_icon.png></a></div>');
-var nav_hidden = true
+var nav_hidden = true;
 
 //append the hamburger nav button
 $(".main-header h1").append($nav_button);
