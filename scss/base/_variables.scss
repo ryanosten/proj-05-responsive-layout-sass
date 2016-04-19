@@ -3,6 +3,12 @@
 $tundora-black: #4b4b4b;
 $boulder-grey: #787878;
 $royal-purple: #574bed;
+$white: #FFF;
+$dove-gray: #676767;
+$alabaster-gray: #F9F9F9;
+$mercury-gray: #E7E7E7;
+$mineshaft-black: #3e3e3e;
+$transparent: transparent;
 
 //Functional color variables
 
@@ -10,15 +16,35 @@ $color-text-light: $boulder-grey;
 $color-text-dark: $tundora-black;
 $color-active: $royal-purple;
 $color-button: darken($royal-purple, 20%);
+$color-border: $dove-gray;
+$color-bgd: $alabaster-gray;
+$color-divider: $mercury-gray;
+$color-nav-links: $mineshaft-black;
+
 
 //Font-stack
 
 $font-family-roboto: 'Roboto', sans-serif;
+
+//Font size
+
+$font-size-small: 1.1em;
 $font-size-main: 1.2em;
+$font-size-foot-anchor: 1.3em;
+$font-size-h3: 1.4em;
+
+//Font-weight
+
+$font-weight-light: 300;
+$font-weight-med: 500;
+$font-weight-heavy: 700;
+$font-weight-super-heavy: 900;
 
 //Form bottom margin
 
 $form-bottom-margin: 10px;
+
+
 
 
 

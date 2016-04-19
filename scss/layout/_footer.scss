@@ -4,7 +4,7 @@ footer {
 	@extend %centered;
 	display: block;
 	margin: 0 auto; 
-	background-color: #f9f9f9;
+	background-color: $color-bgd;
 	padding-bottom: 15px;
 }
 
@@ -14,7 +14,7 @@ footer {
 	color: $color-text-dark;
 	padding: 50px 0 15px;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: $font-size-main;
 	
 	}
 
@@ -30,7 +30,7 @@ footer {
 	}
 
 	&-email {
-	border-bottom: 1px solid #e7e7e7; 
+	border-bottom: 1px solid $color-divider; 
 	max-width: 85%;
 	margin: 0 auto 10px;
 	}
@@ -38,8 +38,8 @@ footer {
 	&-phone a,
 	&-email a {
 	color: $color-text-light;
-	font-size: 1.3em;
-	font-weight: 700;
+	font-size: $font-size-foot-anchor;
+	font-weight: $font-weight-heavy;
 	}
 
 	&-contact {
@@ -68,7 +68,7 @@ footer p {
 
 .student-name {
 	color: $color-text-dark;
-	font-size: 1.2em;
+	font-size: $font-size-main;
 
 	@include tablet {
 		width: 20%;
@@ -77,7 +77,7 @@ footer p {
 
 .back-to-top {
 	color: $color-text-dark;
-	font-size: 1.1em;
+	font-size: $font-size-small;
 	text-transform: uppercase;
 
 	@include tablet {

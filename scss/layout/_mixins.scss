@@ -1,0 +1,7 @@
+@mixin active-link {
+	
+	border-bottom: 3px solid $color-active;
+	margin-bottom: -3px;
+	background-color: $transparent;
+	color: $color-nav-links;
+}

@@ -18,13 +18,13 @@ $(".main-header h1").append($nav_button);
 
 
 $(window).resize(function(){
-	if ($(window).width() > 768){	
+	if ($(window).width() >= 768){	
 		$(".nav-bar").show();
 	}	
 });
 
 $(window).resize(function(){
-	if ($(window).width() > 1024){	
+	if ($(window).width() >= 1024){	
 		$(".nav-bar").css('display', 'inline-block');
 	}	
 });

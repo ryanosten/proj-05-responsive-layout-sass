@@ -3,7 +3,7 @@
 .main-header {
 	@extend %centered;
 	display: block;
-	background-color: #f9f9f9;
+	background-color: $color-bgd;
 	color: $color-text-dark;
 	padding-bottom: 30px;
 
@@ -11,7 +11,7 @@
 		color: $color-text-dark;
 		padding: 35px 0 15px 0;
 		margin: 0;
-		font-weight: 700;
+		font-weight: $font-weight-heavy;
 
 		@include desktop {
 			display: inline-block;
@@ -20,6 +20,10 @@
 }
 
 .nav-bar {
+
+	@include tablet {
+		display: inline-block;
+	}
 
 	@include desktop {
 		display: inline-block; 
@@ -38,25 +42,18 @@
 	  		display: inline-block;
 
 	  		a {
-			  	background-color: transparent;
+			  	background-color: $transparent;
 			  	padding-left: 25px;
 			  	padding-right: 25px;
 			  	text-align: center;
 	  		}
 
 	  		a:hover {
-				border-bottom: 3px solid #574bed;
-				margin-bottom: -3px;
-				background-color: transparent;
-				color: #3e3e3e;
-
+				@include active-link;
 			}
 
 			a.selected {
-				border-bottom: 3px solid #574bed;
-				margin-bottom: -3px;
-				background-color: transparent;
-				color: #3e3e3e;
+				@include active-link;
 			}
 	  	}
 	}
@@ -82,8 +79,8 @@
 
 	&-desc {
 		@include tablet {
-		  	font-size: 1.1em;
-		  	font-weight: 300;
+		  	font-size: $font-size-small;
+		  	font-weight: $font-weight-light;
 		  	max-width: 60%; 
 		  	padding-top: 40px;
 		  	text-align: left;

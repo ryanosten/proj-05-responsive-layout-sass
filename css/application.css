@@ -2,11 +2,6 @@
 body {
   font-family: "Roboto", sans-serif; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 a {
   text-decoration: none;
   cursor: pointer; }
@@ -21,12 +16,12 @@ li a {
   display: block;
   padding: 10px 0;
   margin: 5px auto;
-  background-color: white;
+  background-color: #FFF;
   max-width: 90%;
   font-weight: 900; }
 li a:hover, li a.selected {
   background-color: #574bed;
-  color: white; }
+  color: #FFF; }
 
 .hidden {
   display: none; }
@@ -37,6 +32,11 @@ p, span {
   margin: auto;
   font-size: 1.2em;
   color: #787878; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .portfolio-pic {
   max-width: 95%; }
@@ -58,7 +58,7 @@ p, span {
   margin-top: 40px;
   color: #4b4b4b;
   font-size: 1.4em;
-  font-weight: 500; }
+  font-weight: 300 200; }
 
 /** MAIN CONTAINER **/
 .main-container {
@@ -80,7 +80,7 @@ p, span {
 footer {
   display: block;
   margin: 0 auto;
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   padding-bottom: 15px; }
 
 .footer-headline {
@@ -94,7 +94,7 @@ footer {
 .footer-phone {
   height: 35px; }
 .footer-email {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #E7E7E7;
   max-width: 85%;
   margin: 0 auto 10px; }
 .footer-phone a, .footer-email a {
@@ -169,7 +169,7 @@ input {
 /** MAIN-HEADER **/
 .main-header {
   display: block;
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   color: #4b4b4b;
   padding-bottom: 30px; }
   .main-header h1 {
@@ -181,6 +181,9 @@ input {
       .main-header h1 {
         display: inline-block; } }
 
+@media (min-width: 768px) {
+  .nav-bar {
+    display: inline-block; } }
 @media (min-width: 1024px) {
   .nav-bar {
     display: inline-block;
@@ -250,7 +253,7 @@ input, textarea {
   width: 225px;
   height: 40px;
   margin-left: 110px;
-  color: white;
+  color: #FFF;
   border-color: transparent; }
 
 .nav-button {

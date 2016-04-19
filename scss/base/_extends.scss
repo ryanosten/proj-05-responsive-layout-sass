@@ -7,3 +7,11 @@
 	font-size: $font-size-main;
 	color: $color-text-light;
 }
+
+//clearfix
+
+%clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}

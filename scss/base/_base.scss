@@ -13,9 +13,7 @@ span {
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	@extend %clearfix;
 }
 
 a {
@@ -40,16 +38,16 @@ li {
 		display: block;
 		padding: 10px 0;
 		margin: 5px auto;
-		background-color: white;
+		background-color: $white;
 		max-width: 90%;
-		font-weight: 900;
+		font-weight: $font-weight-super-heavy;
 	
 	}
 
 	& a:hover,
 	& a.selected  {
 		background-color: $color-active;
-		color: white;
+		color: $white;
 	}
 }
 

@@ -18,7 +18,7 @@ form {
 	&-email label {
 		color: $color-text-light;
 		margin-right: 30px;
-		font-size: 1.2em;
+		font-size: $font-size-main;
 
 		@include tablet {
 			margin-right: 35px;
@@ -32,7 +32,7 @@ form {
 	&-msg label {
 		color: $color-text-light;
 		vertical-align: top;
-		font-size: 1.2em;
+		font-size: $font-size-main;
 	}
 }
 

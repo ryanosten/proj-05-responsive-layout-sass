@@ -10,11 +10,20 @@
 	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #676767;
+	border-color: $color-border;
 	width: 200px;
 
 	@include tablet {
 		width: 250px;
 	}
+}
+
+//Links
+
+%active-link {
+	border-bottom: 3px solid $color-active;
+	margin-bottom: -3px;
+	background-color: $transparent;
+	color: $color-nav-links;
 }
 

@@ -21,8 +21,8 @@
 .project h3 {
 	@include margin-top(40px);
 	color: $color-text-dark;
-	font-size: 1.4em;
-	font-weight: 500;
+	font-size: $font-size-h3;
+	font-weight: $font-weight-light(+200);
 }
 
 
